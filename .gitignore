@@ -1,0 +1,7 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+
+# A built dataset root is large; it belongs on Zenodo, not here.
+/data/

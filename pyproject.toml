@@ -1,0 +1,44 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "srf"
+version = "1.0.0"
+description = "SRF: Synthetic Rigidity Frameworks -- generator, loaders and rigidity labels for planar WSN networks"
+readme = "README.md"
+license = { file = "LICENSE" }
+keywords = ["wireless sensor networks", "rigidity", "graph rigidity", "localization", "dataset", "pebble game"]
+authors = [
+    { name = "Žiga Emeršič" },
+    { name = "Diego Sušanj" },
+]
+maintainers = [{ name = "Diego Sušanj", email = "diego.susanj@unipu.hr" }]
+requires-python = ">=3.11"
+dependencies = ["numpy>=1.24"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: BSD License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Mathematics",
+]
+
+[project.urls]
+Repository = "https://github.com/disusanj/srf-dataset"
+Issues = "https://github.com/disusanj/srf-dataset/issues"
+Changelog = "https://github.com/disusanj/srf-dataset/blob/main/CHANGELOG.md"
+
+[project.optional-dependencies]
+test = ["pytest>=7"]
+
+[project.scripts]
+srf = "srf.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

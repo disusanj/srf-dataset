@@ -1,0 +1,38 @@
+cff-version: 1.2.0
+message: "If you use SRF, please cite the dataset below."
+title: "SRF: Synthetic Rigidity Frameworks"
+abstract: "Generator, loaders and rigidity labels for SRF, a corpus of planar wireless sensor networks with centrally computed rigidity labels."
+type: software
+version: 1.0.0
+license: BSD-3-Clause
+repository-code: "https://github.com/disusanj/srf-dataset"
+keywords:
+  - wireless sensor networks
+  - rigidity theory
+  - graph rigidity
+  - network localization
+  - dataset
+authors:
+  - family-names: "Emeršič"
+    given-names: "Žiga"
+    orcid: "https://orcid.org/0000-0002-3726-9404"
+    affiliation: "University of Ljubljana, Faculty of Computer and Information Science"
+  - family-names: "Sušanj"
+    given-names: "Diego"
+    orcid: "https://orcid.org/0000-0002-1026-7345"
+    affiliation: "Juraj Dobrila University of Pula, Faculty of Engineering"
+    email: "diego.susanj@unipu.hr"
+contact:
+  - family-names: "Sušanj"
+    given-names: "Diego"
+    email: "diego.susanj@unipu.hr"
+references:
+  - type: dataset
+    title: "SRF: Synthetic Rigidity Frameworks (dataset), version 1.0.0"
+    doi: "10.5281/zenodo.22991571"
+    license: CC-BY-4.0
+    authors:
+      - family-names: "Emeršič"
+        given-names: "Žiga"
+      - family-names: "Sušanj"
+        given-names: "Diego"
